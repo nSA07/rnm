@@ -1,0 +1,11 @@
+#root {
+    background-color: #272B33;
+}
+
+.wrapper {
+    background-color: #fff;
+}
+@import './reset';
+@import './components/index';
+@import './components/MUI/customUI';
+@import './main';

@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    &__logo {
+        padding: 10px 0 10px 27px;
+    }
+    &__main {
+        padding: 115px 0 120px;
+    }
+    &__title {
+        color: #202329;
+        text-align: center;
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 111.375px; /* 110% */
+    }
+}
