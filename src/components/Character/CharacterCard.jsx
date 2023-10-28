@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 
-export const CharacterCard = ({name, status, species, image, location, episode}) => {
+export const CharacterCard = ({id, name, status, species, image, location, episode}) => {
+  
   return (
     <div className="card">
       <img
@@ -9,7 +11,9 @@ export const CharacterCard = ({name, status, species, image, location, episode})
       />
       <div className="card__info">
         <div className="card__wrap">
-          <p className="card__name">{name}</p>
+          <Link to={`/character/${id}`}>
+            <p className="card__name">{name}</p>
+          </Link>
           <span className="card__status">{status} - {species}</span>
         </div>
         <div className="card__wrap">

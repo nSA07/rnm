@@ -12,6 +12,13 @@ export const getCharacter = createAsyncThunk(
     }
 )
 
+export const getSingleCharacter = createAsyncThunk(
+    'caracter/getCaracter', async ({query, id}, { rejectWithValue, dispatch }) => {
+        const res = await axios(`https://rickandmortyapi.com/api/${query}/${id}`)
+        dispatch(setCharacter(res.data))
+    }
+)
+
 export const characterSlice = createSlice({
     name: 'caracter',
     initialState,

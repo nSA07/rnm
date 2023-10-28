@@ -9,7 +9,7 @@ import { CharacterCard } from '../components/Character/CharacterCard'
 
 export const Page = () => {
   const dispatch = useDispatch()
-  const character = useSelector((state: any) => state.character.character)
+  const character = useSelector((state) => state.character.character)
 
   const [page, setPage] = useState(1)
 
@@ -31,9 +31,10 @@ export const Page = () => {
         >Filter</Button>
       </div>
       <div className='main__list'>
-        {character.results?.map((item: any) => (
+        {character.results?.map((item) => (
           <CharacterCard
             key={item.id}
+            id={item.id}
             name={item.name}
             status={item.status}
             species={item.species}

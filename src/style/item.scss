@@ -1,0 +1,14 @@
+.item {
+    display: flex;
+    gap: 41px;
+    margin: 40px 0 252px;
+    background-color: #3C3E44;
+    border-radius: 9px 0px 0px 9px;
+    &__img {
+        width: 100%;
+        max-width: 495px;
+    }
+    &__info {
+        max-width: 100%;
+    }
+}
