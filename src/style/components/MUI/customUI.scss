@@ -9,3 +9,15 @@
 .MuiPagination-ul {
     justify-content: center;
 }
+.MuiSelect-select {
+    padding: 0 !important;
+    height: 57px !important;
+}
+.MuiFormControlLabel-root {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.MuiTypography-root::first-letter {
+    text-transform: capitalize;
+}

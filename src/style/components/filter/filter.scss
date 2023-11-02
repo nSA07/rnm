@@ -1,0 +1,44 @@
+.filter {
+    display: flex;
+    gap: 161px;
+    height: 100%;
+    &__wrap {
+        width: 100%;
+    }
+    &__form {
+        display: flex;
+        gap: 28px;
+    }
+    &__lable {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        z-index: 5;
+        color: #272B33;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+    }
+    &__control {
+        height: 100%;
+    }
+    &__inner {
+        position: relative;
+        width: 100%;
+        max-width: 260px;
+    }
+    &__list {
+        z-index: 5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        
+    }
+}
